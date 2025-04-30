@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: alata;
+    src: url(/fonts/Alata-Regular.ttf);
+}
+
+@font-face {
+    font-family: jose;
+    src: url(/fonts/JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family: jose-light;
+    src: url(/fonts/JosefinSans-Light.ttf);
+}
+
+
+@theme{
+    --color-grey-200: hsl(0, 0%, 85%);
+    --font-jose:jose;
+    --font-alata:alata;
+    --font-jose-light:jose-light;
+    --breakpoint-3xl: 120rem;
+}
+
+
+@layer utilities{
+    .ham-menu {
+        @apply h-[30px] w-[25px] ml-auto relative z-5 hover:cursor-pointer md:hidden;
+      }
+      .ham-menu span {
+        @apply h-[3px] w-[100%]  bg-white rounded-3xl absolute top-1/2  -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out;
+      }
+      .ham-menu span:nth-child(1) {
+        @apply top-1/4;
+      }
+      .ham-menu span:nth-child(3) {
+        @apply top-[75%];
+      }
+      .ham-menu.active span {
+        @apply bg-white;
+      }
+      .ham-menu.active span:nth-child(1) {
+        @apply top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45;
+      }
+      .ham-menu.active span:nth-child(2) {
+        @apply opacity-0;
+      }
+      .ham-menu.active span:nth-child(3) {
+        @apply -rotate-45 top-1/2  -translate-x-1/2 -translate-y-1/2 ;
+      }
+
+
+    .nav-text{
+        @apply relative underline-offset-2 decoration-2 hover:after:block after:content-[''] after:absolute after:bottom-0 after:left-1/5 after:h-[2px] after:w-2/3 after:bg-amber-50 after:hidden uppercase md:capitalize font-jose-light md:font-jose text-xl md:text-base z-0
+    }
+
+    .active{
+        @apply left-0
+    }
+}

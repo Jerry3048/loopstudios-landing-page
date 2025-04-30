@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <link href="./src/output.css" rel="stylesheet" />
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden flex-wrap ">
+  <header class="sm:bg-[url(../images/desktop/image-hero.jpg)] bg-[url(../images/mobile/image-hero.jpg)] bg-no-repeat    bg-cover w-full h-[80vh] lg:h-screen sm:flex sm:flex-wrap  gap-0 flex flex-col">
+    <nav class="flex justify-between items-center 
+     h-20 mt-10 w-[85%] mx-auto">
+      <img src="./images/logo.svg" alt="logo" class=" z-1 sm:w-44 w-32" />
+      <div class="dropdown">
+        <!-- <button class="dropbtn sm:hidden">
+          <img src="./images/icon-hamburger.svg" alt="logo" id="hamburger"/>
+        </button> -->
+        <div class="ham-menu" aria-label="Menu button">
+            <span class="span-1 "></span>
+            <span class="span-2"></span>
+            <span class="span-3"></span>
+        </div>
+        <!-- <div id="dropdownContent" class="dropdown-content" class ="hidden bg-black text-white w-[85%] h-[100vh] absolute top-0 left-0 mt-20">
+          <a href="#">ABOUT</a>
+          <a href="#">CAREER</a>
+          <a href="#">EVENTS</a>
+          <a href="#">PRODUCT</a>
+          <a href="#">SUPPORT</a>
+        </div> -->
+      </div>
+      <div class="flex md:justify-end space-x-4 absolute md:relative w-[100vw] bg-black flex-col md:flex-row text-white font-jose md:left-auto md:top-auto  left-[-120%] top-0 pl-10 md:h-auto md:bg-transparent md:p-0 h-[80vh] pt-40 nav-menu transition-all duration-500 ease-in-out space-y-4 md:space-y-0">
+        <!-- <div class="hidden sm:flex space-x-4"> -->
+          <a href="#" class="nav-text">About</a>
+          <a href="#" class="nav-text">
+            Careers</a>
+          <a href="#" class = "nav-text">Events</a>
+          <a href="#" class = "nav-text">Products</a>
+          <support href="#" class = "nav-text">support</a>
+        <!-- </div> -->
+      </div>
+    </nav>
+    <div class = "w-[85%] mt-50 h-auto mx-auto flex flex-justify-center items-center">
+      <h2 class="text-white border-1 p-4   font-jose-light  text-4xl sm:text-6xl lg:text-7xl">
+        IMMPERSIVE</br>
+        EXPERIENCES</br>
+        THAT DELIVERS
+      </h2>
+    </div>
+
+  </header>  
+
+  <main class="mt-30 m-auto w-[85%] ">
+    <section class="relative bg-white w-full ">
+      <div class="w-full">
+        <img src="./images/desktop/image-interactive.jpg" alt="interactive" class="sm:h-[500px] w-full lg:w-[60%] 3xl:h-[600px] hidden sm:block">
+        <img src="./images/mobile/image-interactive.jpg" alt="interactive" class="w-full sm:hidden">
+      </div>
+      <div class = "3xl:right-[-10%] lg:right-[-5%] lg:absolute lg:bottom-0 lg:h-auto  bg-white 3xl:w-[70%] lg:w-[60%]  w-full lg:pt-20 lg:pl-20 3xl:pt-40 3xl:pl-40  mt-20 ">
+        <h2 class = "text-3xl lg:text-5xl  sm:text-4xl 3xl:text-7xl uppercase font-jose-light text-center lg:text-left " >
+          The leader in interactive VR
+        </h2>
+        <p class = "font-jose  text-gray-500  leading-relaxed 3xl:text-2xl  text-center lg:text-left lg:m-0 lg:w-[75%] w-full ">
+          Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.
+
+        </p>
+      </div>
+    </section>
+    
+    <section class="lg:mt-50 mt-32">
+      <div class ="sm:flex justify-between sm:items-center">
+       <h2 class="font-jose-light text-5xl lg:text-8xl  text-center sm:text-left"> Our creations</h2>
+       <button class ="bg-white text-black border-black border-4 text-center h-10 w-32  font-jose-light uppercase hidden sm:block">See all</button>
+      </div>
+
+      <div class="grid grid-cols-none gap-4 mt-10 lg:grid sm:grid-cols-2  lg:gap-8  lg:grid-cols-4 lg:mt-30 ">
+        <div class="relative">
+          <img src="./images/desktop/image-deep-earth.jpg" alt="deep-earth" class="w-full rounded-lg shadow-lg hidden sm:block  " />
+          <img src="./images/mobile/image-deep-earth.jpg" alt="deep-earth" class="w-full  shadow-lg block sm:hidden h-[200px] " />
+          <h2 class=" absolute bottom-2 lg:bottom-0 text-white text-3xl sm:text-4xl 3xl:text-6xl uppercase font-jose-light ml-[35px]">Deep<br> earth</h2>
+        </div>
+        <div class ="relative">
+          <img src="./images/desktop/image-from-above.jpg" alt="from-above" class=" w-full rounded-lg shadow-lg hidden sm:block" />
+          <img src="./images/mobile/image-from-above.jpg" alt="from-above" class=" w-full shadow-lg sm:hidden h-[200px]" />
+          <h2 class=" absolute lg:bottom-0 text-white sm:text-4xl 3xl:text-6xl  text-3xl  bottom-2 uppercase font-jose-light ml-[35px] ">From up<br> above VR</h2>
+        </div>
+        <div class="relative">
+          <img src="./images/desktop/image-pocket-borealis.jpg" alt="pocket-borealis"
+            class="w-full rounded-lg shadow-lg hidden sm:block" />
+          <img src="./images/mobile/image-pocket-borealis.jpg" alt="pocket-borealis"
+            class="w-full  shadow-lg sm:hidden  h-[200px]" />
+          <h2 class="absolute lg:bottom-0 text-white sm:text-4xl 3xl:text-6xl text-3xl  bottom-2 uppercase font-jose-light ml-[35px] ">Pocket<br> borealis</h2>  
+        </div>
+        <div class="relative">
+          <img src="./images/desktop/image-night-arcade.jpg" alt="night-arcade"
+            class="w-full shadow-lg hidden sm:block" />
+            <img src="./images/mobile/image-night-arcade.jpg" alt="night-arcade"
+            class="w-full rounded-lg shadow-lg sm:hidden  h-[200px]" />  
+          <h2 class="absolute lg:bottom-0 text-white sm:text-4xl 3xl:text-6xl text-3xl  bottom-2 uppercase font-jose-light ml-[35px] ">Night<br> arcade</h2>
+        </div> 
+        <div class="relative">
+          <img src="./images/desktop/image-fisheye.jpg" alt="soccer-team"
+            class="w-full rounded-lg shadow-lg hidden sm:block" />
+            <img src="./images/mobile/image-fisheye.jpg" alt="soccer-team"
+            class="w-full shadow-lg sm:hidden  h-[200px]" />
+          <h2 class=" absolute lg:bottom-0 text-white sm:text-4xl 3xl:text-6xl text-3xl  bottom-2 uppercase font-jose-light ml-[35px] ">Make it<br> fisheye</h2>
+        </div>
+        <div class="relative">
+          <img src="./images/desktop/image-grid.jpg" alt="grid"
+            class="w-full rounded-lg shadow-lg hidden sm:block" />
+            <img src="./images/mobile/image-grid.jpg" alt="grid"
+            class="w-full shadow-lg sm:hidden  h-[200px]" />
+          <h2 class=" absolute lg:bottom-0 text-white sm:text-4xl 3xl:text-6xl text-3xl  bottom-2 uppercase font-jose-light ml-[35px] ">The<br> grid</h2>
+        </div>
+        <div class="relative">
+          <img src="./images/desktop/image-soccer-team.jpg" alt="soccer-team"
+            class="w-full rounded-lg shadow-lg hidden sm:block" />
+            <img src="./images/mobile/image-soccer-team.jpg" alt="soccer-team"
+            class="w-full shadow-lg sm:hidden h-[200px]" />
+          <h2 class=" absolute lg:bottom-0 text-white sm:text-4xl 3xl:text-6xl text-3xl  bottom-2 uppercase font-jose-light ml-[35px] ">Soccer<br> team VR</h2>
+        </div>
+        <div class="relative">
+          <img src="./images/desktop/image-curiosity.jpg" alt="the-grid"
+            class="w-full rounded-lg shadow-lg hidden sm:block" />
+            <img src="./images/mobile/image-curiosity.jpg" alt="the-grid"
+            class="w-full shadow-lg sm:hidden  h-[200px]" />
+          <h2 class=" absolute lg:bottom-0 text-white sm:text-4xl 3xl:text-6xl text-3xl  bottom-2 uppercase font-jose-light ml-[35px] ">The<br> curiosity</h2>
+        </div>            
+      </div>
+      <div class="flex justify-center mt-10">
+        <button class="bg-white text-black border-black border-4 text-center h-10 w-32  font-jose-light uppercase sm:hidden">See all</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class = "bg-black w-full   item-center  mt-40  items-center pt-20 pb-20 hidden lg:block ">
+    <div class="w-[85%] m-auto">
+      <div class = "flex justify-between items-center ">
+        <img src="./images/logo.svg" alt="logo" class=""/>
+        <div class=" flex justify-between space-x-5 ">
+          <img src="./images/icon-facebook.svg" alt="facebook" class="" />
+          <img src="./images/icon-instagram.svg" alt="instagram" class="" />
+          <img src="./images/icon-pinterest.svg" alt="pinterest" class="" />
+          <img src="./images/icon-twitter.svg" alt="twitter" class="" />
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-between  w-[85%] m-auto text-center">
+      <div class="flex text-white font-jose space-x-8">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
+      </div>
+      <div>
+        <p class="text-white">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>  
+  </footer>
+
+
+  <footer class = "bg-black w-full mt-40   pt-10 pb-10 lg:hidden">
+    <div class="w-[85%] m-auto space-y-6">
+      <div class = "items-center flex justify-center">
+        <img src="./images/logo.svg" alt="logo" class=""/>
+      </div>
+      <div class="flex flex-col space-y-5 text-white font-jose text-center">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
+      </div>
+      <div class=" flex justify-center space-x-2">
+        <img src="./images/icon-facebook.svg" alt="facebook" class="" />
+        <img src="./images/icon-instagram.svg" alt="instagram" class="" />
+        <img src="./images/icon-pinterest.svg" alt="pinterest" class="" />
+        <img src="./images/icon-twitter.svg" alt="twitter" class="" />
+      </div>
+      <div class="flex justify-center items-center">
+        <p class="text-white">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>  
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Jerry3048">AREWA TOLULOPE</a>.
+  </div>
+  <script>
+const hamMenu = document.querySelector('.ham-menu');
+const navMenu = document.querySelector('.nav-menu');
+
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
+})
+</script>     
+</body>
+
+</html>
